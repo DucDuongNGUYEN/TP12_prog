@@ -1,0 +1,3 @@
+interface Ouverture {
+    boolean estOuvert();
+}

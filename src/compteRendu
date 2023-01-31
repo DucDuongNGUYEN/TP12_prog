@@ -1,0 +1,5 @@
+1) le principe de LSP est violé.Lorsque BouteilleNonRefermable hérite Bouteille, elle doit avoir tous les comportements de Bouteille. Dans la classe BouteilleNonRefermable n'a pas la méthode ferme().
+2) les instructions aux sujets vont passer la compilation si la Carafe hérite la classe Verre. En fait, C'est une mauvaise idée car la classe Carafe ne possède pas la méthode boire(int) c-à-d elle respecte pas le principe de LSP. Donc aucune relation entre ces classes.
+3) SRP est violé. il a plusieurs responsabilité.
+4)OCP est violé parce que on doit modifier le code de contenant pour modifier sans comportements
+5) on a séparé des comportements dans la classe Contenant en des interfaces. SRP est respecté (deux interfaces ouverture et ContenantRemplissable pour chaque responsabilité)et OCP est aussi (complétion de comportement par héritage sans modification du code) )
